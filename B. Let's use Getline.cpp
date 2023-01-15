@@ -5,18 +5,10 @@ using namespace std;
 
 int main()
 {
-	string S;
+    string S;
 
-	getline(cin,S) ;
+    getline(cin, S, '\\');
 
-	int n = S.size();
-
-	for (int i = 0; i < n; i++)
-	{
-		if (S[i] == '\\')
-			break;
-		cout << S[i];
-	}
-	
-	return 0;
+    cout << S;
+    return 0;
 }
